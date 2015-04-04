@@ -30,6 +30,8 @@ init = false;
 init_energy = false;
 
 //Propierties
+active = false;
+energy_use = 0;
 crateid = id;
 type = "void";
 state = "idle";
@@ -65,8 +67,9 @@ nDown = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(type == "arbol1") {
-    global.energy_gen -= 10;
+            <string>if(type == "arbol1" &amp;&amp; active) {
+    global.energy_gen += 10;
+    global.total_energy_use -= 10;
 }
 </string>
           </argument>
@@ -131,6 +134,8 @@ set_type_crate();
             <kind>1</kind>
             <string>view_wview[0] -= 90;
 view_hview[0] -= 160;
+view_object[0] = mouse_hover;
+view_object[0] = noone;
 </string>
           </argument>
         </arguments>
@@ -155,6 +160,8 @@ view_hview[0] -= 160;
             <kind>1</kind>
             <string>view_wview[0] += 90;
 view_hview[0] += 160;
+view_object[0] = mouse_hover;
+view_object[0] = noone;
 </string>
           </argument>
         </arguments>
@@ -204,6 +211,7 @@ view_hview[0] += 160;
             <kind>1</kind>
             <string>draw_self();
 
+//Debug
 if(mouse_x &gt;= x &amp;&amp; mouse_x &lt;= x+sprite_width) &amp;&amp; (mouse_y &gt;= y &amp;&amp; mouse_y &lt;= y+sprite_height) {
     draw_set_color(c_aqua);
     draw_text(x,y+80,"left " + string(nLeft));
@@ -211,6 +219,7 @@ if(mouse_x &gt;= x &amp;&amp; mouse_x &lt;= x+sprite_width) &amp;&amp; (mouse_y 
     draw_text(x,y+112,"up " + string(nUp));
     draw_text(x,y+128,"down " + string(nDown));
 }
+draw_text(x,y+60,"active" + string(active));
 
 </string>
           </argument>
