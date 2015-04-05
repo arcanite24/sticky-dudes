@@ -58,67 +58,22 @@ hover = instance_create(mouse_x,mouse_y,mouse_hover);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_pressed(mb_left)) {
+            <string>/*
+if (mouse_check_button_pressed(mb_left)) {
     drag_x = mouse_x
     drag_y = mouse_y
 }
-if (mouse_check_button(mb_left)) {
+if (mouse_check_button(mb_left)) &amp;&amp; !global.col_mouse {
     
     view_xview = drag_x - (mouse_x - view_xview)
     view_yview = drag_y - (mouse_y - view_yview)
-    /*
+    
     view_xview = max(0, min(view_xview, room_width - view_wview))
     view_yview = max(0, min(view_yview, room_height - view_hview))
-    */
+    
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="53">
-      <action>
-        <libid>1</libid>
-        <id>117</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_snap</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>128</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>128</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>temp = instance_create(mouse_x,mouse_y,obj_crate);
-temp.type = "arbol1";
+*/
+
 </string>
           </argument>
         </arguments>
@@ -179,6 +134,52 @@ for(i=0;i&lt;=view_hview[0];i+=128) {
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.energy_gen -= 10;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.energy_gen += 10;
 </string>
           </argument>
         </arguments>
