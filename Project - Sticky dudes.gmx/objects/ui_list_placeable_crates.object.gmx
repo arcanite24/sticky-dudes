@@ -25,12 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>event_inherited();
+            <string>//Copyright (c) 2013 NailBuster Software Inc.  all rights reserved.
+/**********************
+
+  This source code is provided 'as-is', without any express or implied warranty. 
+  In no event will NailBuster Software Inc. be held liable for any damages arising from the use of this software.
+
+      Permission is granted to use these components for non commercial applications, and to alter it for your needs,
+    subject to the following restrictions:
+    
+  1. The origin of this software must not be misrepresented; you must not claim that you wrote the original source code 
+     or components. If you use this software in a application, an acknowledgment in the product about/documentation would be appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+     You cannot distribute your modified sources of our component suite outside of your company.
+  3. You cannot use this source or components in a tool or package designed to compete with NailBuster GUI component Suite. 
+     For example,  you cannot modify and/or  improve these components and release under another component suite name.
+  4. You cannot redistribute these source files outside of your compiled projects. All original Sources Files/Documentation 
+     must originate from NailBuster Software Inc.  You cannot host or redistribute these source files. 
+  
+  If your application is used for commercial purposes, and will generate revenue directly or indirectly then you are required to 
+  purchase a commercial license from NailBuster Software Inc.  Please visit www.nailbuster.com for purchasing information.
+  If you have any questions about the license please contact us at david@nailbuster.com
+
+**********************/
+
+
+event_inherited();
 
 uiXFollow = x;
 uiYFollow = y;
-moving = false;
-shown = true;
 
 items[0]='';
 itemspos[0]=0;  //array of line#s for variable height rows for selection
@@ -175,7 +198,6 @@ if uiEventObject != noone
             <kind>1</kind>
             <string>uiXFollow = view_xview[0];
 uiYFollow = view_yview[0];
-
 x = uiXFollow;
 y = uiYFollow;
 </string>
@@ -638,7 +660,32 @@ else //see if it was a quick swipe...flicked!
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var disptx,px,py,sel,numitems,fx,cury,tw,sh,sw,surx,sury,visible_ytop,visible_ybot,sur_pos,ch,sprx,spry,sprxscale,spryscale,sprrot,curImageBlend,curAlpha,autoPos,numSprites,curSprite;
+            <string>//Copyright (c) 2013 NailBuster Software Inc.  all rights reserved.
+/**********************
+
+  This source code is provided 'as-is', without any express or implied warranty. 
+  In no event will NailBuster Software Inc. be held liable for any damages arising from the use of this software.
+
+      Permission is granted to use these components for non commercial applications, and to alter it for your needs,
+    subject to the following restrictions:
+    
+  1. The origin of this software must not be misrepresented; you must not claim that you wrote the original source code 
+     or components. If you use this software in a application, an acknowledgment in the product about/documentation would be appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+     You cannot distribute your modified sources of our component suite outside of your company.
+  3. You cannot use this source or components in a tool or package designed to compete with NailBuster GUI component Suite. 
+     For example,  you cannot modify and/or  improve these components and release under another component suite name.
+  4. You cannot redistribute these source files outside of your compiled projects. All original Sources Files/Documentation 
+     must originate from NailBuster Software Inc.  You cannot host or redistribute these source files. 
+  
+  If your application is used for commercial purposes, and will generate revenue directly or indirectly then you are required to 
+  purchase a commercial license from NailBuster Software Inc.  Please visit www.nailbuster.com for purchasing information.
+  If you have any questions about the license please contact us at david@nailbuster.com
+
+**********************/
+
+
+var disptx,px,py,sel,numitems,fx,cury,tw,sh,sw,surx,sury,visible_ytop,visible_ybot,sur_pos,ch,sprx,spry,sprxscale,spryscale,sprrot,curImageBlend,curAlpha,autoPos,numSprites,curSprite;
 
 event_inherited();
 
@@ -850,32 +897,9 @@ if (noscroll==false) &amp;&amp; (uiScrollArrows=true)  &amp;&amp; (uiEnabled)
 
 //if (surface_exists(CurSurface)) {surface_free(CurSurface);}
 
-draw_text(x,y+200,line_clicked);
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>shown = false;
+
 </string>
           </argument>
         </arguments>

@@ -55,7 +55,7 @@
     <objects name="Utils">
       <object>objects\mouse_hover</object>
     </objects>
-    <objects name="group">
+    <objects name="UI Exampless">
       <object>objects\ui_defaults</object>
       <object>objects\ui_gauge</object>
       <object>objects\ui_keyboard</object>
