@@ -8,4 +8,8 @@ if(init == false) {
 if(global.energy_gen >= energy_use) && active == false {
     global.energy_gen -= energy_use;
     active = true;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
