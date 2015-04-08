@@ -150,7 +150,7 @@ draw_text(10,20,"Money: " + string(global.money));
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 draw_set_color(c_black);
 for(i=0;i&lt;=view_wview[0];i+=128) {
     draw_line(0,i,view_wview[0],i);  
@@ -159,8 +159,7 @@ for(i=0;i&lt;=view_wview[0];i+=128) {
 for(i=0;i&lt;=view_hview[0];i+=128) {
     draw_line(i,0,i,view_hview[0]); 
 }
-
-
+*/
 
 
 </string>

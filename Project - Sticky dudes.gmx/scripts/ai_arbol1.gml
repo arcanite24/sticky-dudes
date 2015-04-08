@@ -11,4 +11,3 @@ if(global.energy_gen >= energy_use) && active == false {
 
 }
 
-
