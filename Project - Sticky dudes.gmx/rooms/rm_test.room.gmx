@@ -35,8 +35,8 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="back" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_desenfocado" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_desenfocado" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
@@ -61,6 +61,7 @@
     <instance objName="obj_crate" x="512" y="384" name="inst_6B7D4737" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crate_initial" x="144" y="384" name="inst_0A067CE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ui_listbox_horz" x="0" y="728" name="inst_99C24098" locked="0" code="uiItemWidth=150;  //set the width of each element...&#xA;&#xA;for (fg=0;fg&lt;100;fg+=1) &#xA; { if (fg mod 7) == 2 &#xA;   items[fg]=choose('asda','asdad','asd'); else&#xA;   items[fg]='Wide List '+string(fg);&#xA;   sprites[fg]=choose(crate_arbol1_idle,crate_gen1_idle);&#xA; }&#xA;uiTextLabel='test';&#xA;uiAlign=fa_center;&#xA;uiButtonList=true;&#xA;uiShowArrows=true;&#xA;uiDrawHeader=false;&#xA;uiDrawBackColor=true;&#xA;&#xA;uiXFollow = view_xview[0];&#xA;uiYFollow = view_yview[0];&#xA;uiZoomFactor = 2;&#xA;&#xA;uiEventObject=obj_control;&#xA;uiControlName='make_crate';&#xA;" scaleX="22.5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crate" x="640" y="384" name="inst_756B33F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
