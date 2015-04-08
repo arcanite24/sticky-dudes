@@ -29,8 +29,12 @@
     <sprite>sprites\spr_ui</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\back2</background>
     <background>background\back</background>
+    <background>background\back33</background>
+    <background>background\background2</background>
     <background>background\bg_desenfocado</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -85,7 +89,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test</room>
+    <room>rooms\rm_test2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
