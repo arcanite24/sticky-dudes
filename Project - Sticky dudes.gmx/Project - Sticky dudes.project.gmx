@@ -30,6 +30,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\back</background>
+    <background>background\bg_desenfocado</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
