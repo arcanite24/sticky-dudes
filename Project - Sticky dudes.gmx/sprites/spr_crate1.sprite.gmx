@@ -8,9 +8,9 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>335</bbox_right>
+  <bbox_right>127</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>360</bbox_bottom>
+  <bbox_bottom>127</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -19,8 +19,8 @@
     <TextureGroup2>0</TextureGroup2>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>336</width>
-  <height>361</height>
+  <width>128</width>
+  <height>128</height>
   <frames>
     <frame index="0">images\spr_crate1_0.png</frame>
   </frames>

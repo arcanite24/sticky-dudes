@@ -45,7 +45,7 @@
     <scripts name="Utils">
       <script>scripts\play_animation.gml</script>
       <script>scripts\set_type_crate.gml</script>
-      <script>scripts\initEnergy.gml</script>
+      <script>scripts\set_battery_gen.gml</script>
     </scripts>
     <scripts name="Reference">
       <script>scripts\Reference_Text.gml</script>
@@ -61,6 +61,7 @@
     <object>objects\obj_crate_initial</object>
     <objects name="Utils">
       <object>objects\mouse_hover</object>
+      <object>objects\battery_case</object>
     </objects>
     <objects name="UI Exampless">
       <object>objects\ui_defaults</object>
