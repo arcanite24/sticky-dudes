@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>x = mouse_x;
 y = mouse_y;
-global.col_mouse = place_meeting(x,y,ui_defaults);
+
 </string>
           </argument>
         </arguments>

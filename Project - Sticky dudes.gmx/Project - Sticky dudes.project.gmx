@@ -25,6 +25,8 @@
     </sprites>
     <sprites name="Utils">
       <sprite>sprites\spr_mouse_hover</sprite>
+      <sprite>sprites\spr_battery_case</sprite>
+      <sprite>sprites\spr_battery</sprite>
     </sprites>
     <sprite>sprites\spr_ui</sprite>
   </sprites>
@@ -61,32 +63,11 @@
     <object>objects\obj_crate_initial</object>
     <objects name="Utils">
       <object>objects\mouse_hover</object>
-      <object>objects\battery_case</object>
-    </objects>
-    <objects name="UI Exampless">
-      <object>objects\ui_defaults</object>
-      <object>objects\ui_gauge</object>
-      <object>objects\ui_keyboard</object>
-      <object>objects\ui_label</object>
-      <object>objects\ui_listbox</object>
-      <object>objects\ui_listbox_ext</object>
-      <object>objects\ui_listbox_horz</object>
-      <object>objects\ui_panel</object>
-      <object>objects\ui_slider</object>
-      <object>objects\ui_swipe</object>
-      <object>objects\ui_textani</object>
-      <object>objects\ui_textbox</object>
-      <object>objects\ui_ani_control</object>
-      <object>objects\ui_bubble</object>
-      <object>objects\ui_button</object>
-      <object>objects\ui_button_ani</object>
-      <object>objects\ui_checkbox</object>
-      <object>objects\ui_checkgroup</object>
-      <object>objects\ui_combobox</object>
-      <object>objects\ui_dialog</object>
-      <object>objects\ui_editbox</object>
-      <object>objects\ui_label_score</object>
-      <object>objects\ui_image</object>
+      <object>objects\obj_gui</object>
+      <objects name="Battery System">
+        <object>objects\battery_case</object>
+        <object>objects\obj_battery</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
