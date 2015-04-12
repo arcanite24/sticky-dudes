@@ -48,6 +48,7 @@
       <script>scripts\play_animation.gml</script>
       <script>scripts\set_type_crate.gml</script>
       <script>scripts\set_battery_gen.gml</script>
+      <script>scripts\set_battery_use.gml</script>
     </scripts>
     <scripts name="Reference">
       <script>scripts\Reference_Text.gml</script>
@@ -66,6 +67,7 @@
       <object>objects\obj_gui</object>
       <objects name="Battery System">
         <object>objects\battery_case</object>
+        <object>objects\battery_case_use</object>
         <object>objects\obj_battery</object>
       </objects>
     </objects>

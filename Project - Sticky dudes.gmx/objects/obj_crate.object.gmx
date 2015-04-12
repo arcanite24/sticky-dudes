@@ -33,9 +33,17 @@ active = false;
 crateid = id;
 type = "void";
 state = "idle";
+
+//Battery Gen
 battery_x = 0;
 battery_y = 0;
 battery_obj = noone;
+
+//Battery Use
+battery_use = false;
+battery_use_obj = noone;
+battery_use_x = 0;
+battery_use_y = 0;
 
 //Neighbor check
 nLeft = false;
