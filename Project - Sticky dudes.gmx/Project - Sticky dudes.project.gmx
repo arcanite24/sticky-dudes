@@ -67,7 +67,6 @@
       <object>objects\obj_gui</object>
       <objects name="Battery System">
         <object>objects\battery_case</object>
-        <object>objects\battery_case_use</object>
         <object>objects\obj_battery</object>
       </objects>
     </objects>

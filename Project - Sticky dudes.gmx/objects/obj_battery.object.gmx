@@ -28,6 +28,8 @@
             <string>case_obj = noone;
 crate_id = noone;
 crate_type = "";
+crate_need_battery = false;
+crate_active = false;
 </string>
           </argument>
         </arguments>
@@ -54,11 +56,33 @@ crate_type = "";
     x = mouse_x;
     y = mouse_y;
 }
-/*
-if(mouse_check_button_released(mb_left)) {
-   
-}
-*/
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_crate">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>crate_id = other.id;
+crate_type = other.type;
+crate_need_battery = other.battery_use;
+crate_active = other.battery_active;
 </string>
           </argument>
         </arguments>
@@ -87,7 +111,11 @@ if(mouse_check_button_released(mb_left)) {
 }
 //Collision check with crate
 if(position_meeting(mouse_x,mouse_y,obj_crate)) {
-    
+    if(crate_need_battery &amp;&amp; crate_active == false) {
+        crate_id.alarm[0] = crate_id.battery_delay_use;
+        case_obj.battery_obj = noone;
+        instance_destroy();
+    }
 }
 </string>
           </argument>
@@ -136,7 +164,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x,y,global.mouse_collision_obj);
+draw_text(x,y,crate_type);
 </string>
           </argument>
         </arguments>

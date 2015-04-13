@@ -42,8 +42,8 @@ battery_obj = noone;
 //Battery Use
 battery_use = false;
 battery_use_obj = noone;
-battery_use_x = 0;
-battery_use_y = 0;
+battery_active = false;
+battery_delay_use = 0;
 
 //Neighbor check
 nLeft = false;
@@ -202,9 +202,9 @@ draw_self();
 //Debug
 if(mouse_x &gt;= x &amp;&amp; mouse_x &lt;= x+sprite_width) &amp;&amp; (mouse_y &gt;= y &amp;&amp; mouse_y &lt;= y+sprite_height) {
     draw_set_color(c_black);
-    draw_text(x+10,y+10,"left " + string(nLeft));
-    draw_text(x+10,y+30,"right " + string(nRight));
-    draw_text(x+10,y+50,"up " + string(nUp));
+    draw_text(x+10,y+10,"use bat " + string(battery_use));
+    draw_text(x+10,y+30,"active? " + string(battery_active));
+    draw_text(x+10,y+50,"bat delay " + string(battery_delay_use));
     draw_text(x+10,y+70,"down " + string(nDown));
 }
 
