@@ -105,17 +105,27 @@ crate_active = other.battery_active;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!position_meeting(mouse_x,mouse_y,obj_crate)) {
+            <string>/*
+if(!position_meeting(mouse_x,mouse_y,obj_crate)) {
     x = case_obj.x;
     y = case_obj.y;
 }
+*/
+
 //Collision check with crate
 if(position_meeting(mouse_x,mouse_y,obj_crate)) {
     if(crate_need_battery &amp;&amp; crate_active == false) {
+        crate_id.battery_active = true;
         crate_id.alarm[0] = crate_id.battery_delay_use;
         case_obj.battery_obj = noone;
         instance_destroy();
+    } else {
+        x = case_obj.x;
+        y = case_obj.y;
     }
+} else {
+    x = case_obj.x;
+    y = case_obj.y;
 }
 </string>
           </argument>

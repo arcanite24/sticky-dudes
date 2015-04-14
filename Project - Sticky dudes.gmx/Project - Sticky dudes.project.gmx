@@ -64,10 +64,13 @@
     <object>objects\obj_crate_initial</object>
     <objects name="Utils">
       <object>objects\mouse_hover</object>
-      <object>objects\obj_gui</object>
       <objects name="Battery System">
         <object>objects\battery_case</object>
         <object>objects\obj_battery</object>
+      </objects>
+      <objects name="Parents Collision">
+        <object>objects\obj_gui</object>
+        <object>objects\obj_crateEnergy</object>
       </objects>
     </objects>
   </objects>

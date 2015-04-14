@@ -3,3 +3,6 @@ if(init == false) {
     set_battery_use(room_speed*5);
     init = true;
 }
+if(battery_active) {
+/*penedelamadre*/
+}
