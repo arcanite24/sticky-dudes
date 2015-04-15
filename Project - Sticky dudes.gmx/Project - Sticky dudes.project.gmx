@@ -27,6 +27,7 @@
       <sprite>sprites\spr_mouse_hover</sprite>
       <sprite>sprites\spr_battery_case</sprite>
       <sprite>sprites\spr_battery</sprite>
+      <sprite>sprites\spr_coin</sprite>
     </sprites>
     <sprite>sprites\spr_ui</sprite>
   </sprites>
@@ -49,6 +50,7 @@
       <script>scripts\set_type_crate.gml</script>
       <script>scripts\set_battery_gen.gml</script>
       <script>scripts\set_battery_use.gml</script>
+      <script>scripts\set_money_gen.gml</script>
     </scripts>
     <scripts name="Reference">
       <script>scripts\Reference_Text.gml</script>
@@ -71,6 +73,9 @@
       <objects name="Parents Collision">
         <object>objects\obj_gui</object>
         <object>objects\obj_crateEnergy</object>
+      </objects>
+      <objects name="Money System">
+        <object>objects\obj_coin</object>
       </objects>
     </objects>
   </objects>

@@ -45,6 +45,16 @@ battery_use_obj = noone;
 battery_active = false;
 battery_delay_use = 0;
 
+//Money Gen
+money_gen = false;
+money_x1 = 0;
+money_x2 = 0;
+money_y1 = 0;
+money_y2 = 0;
+money_delay1 = 0;
+money_delay2 = 0;
+money_value = 0;
+
 //Neighbor check
 nLeft = false;
 nRight = false;
@@ -54,6 +64,37 @@ nDown = false;
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Money system
+var tt = floor(random_range(money_delay1,money_delay2));
+if(money_gen) {
+    var xx = floor(random_range(money_x1,money_x2));
+    var yy = floor(random_range(money_y1,money_y2));     
+    c = instance_create(xx,yy,obj_coin);
+    c.value = money_value;
+}
+alarm[1] = tt;
 </string>
           </argument>
         </arguments>
@@ -228,8 +269,8 @@ if(mouse_x &gt;= x &amp;&amp; mouse_x &lt;= x+sprite_width) &amp;&amp; (mouse_y 
     draw_set_color(c_black);
     draw_text(x+10,y+10,"use bat " + string(battery_use));
     draw_text(x+10,y+30,"active? " + string(battery_active));
-    draw_text(x+10,y+50,"bat delay " + string(battery_delay_use));
-    draw_text(x+10,y+70,"down " + string(nDown));
+    draw_text(x+10,y+50,"bat delay " + string(battery_delay_use / 60));
+    draw_text(x+10,y+70,"ener left " + string(alarm[0] / 60));
 }
 
 

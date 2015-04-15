@@ -57,7 +57,7 @@ hover = instance_create(mouse_x,mouse_y,mouse_hover);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_pressed(mb_left)) {
+            <string>if (mouse_check_button_pressed(mb_left)) &amp;&amp; !position_meeting(mouse_x, mouse_y, obj_gui) {
     drag_x = mouse_x
     drag_y = mouse_y
 }
