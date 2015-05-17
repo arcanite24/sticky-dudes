@@ -30,6 +30,7 @@ crate_id = noone;
 crate_type = "";
 crate_need_battery = false;
 crate_active = false;
+
 </string>
           </argument>
         </arguments>

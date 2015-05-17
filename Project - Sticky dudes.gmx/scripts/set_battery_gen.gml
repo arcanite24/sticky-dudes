@@ -5,4 +5,3 @@ battery_x = b.x;
 battery_y = b.y;
 b.delay = argument2;
 b.alarm[0] = b.delay;
-

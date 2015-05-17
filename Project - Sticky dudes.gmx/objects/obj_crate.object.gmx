@@ -61,6 +61,12 @@ nRight = false;
 nUp = false;
 nDown = false;
 
+n1 = noone;
+n2 = noone;
+n3 = noone;
+n4 = noone;
+
+
 
 
 
@@ -144,72 +150,26 @@ alarm[1] = tt;
             <string>///Collision Check
 if(place_meeting(x-1,y,obj_crate)) {
     nLeft = true;
+    n1 = other.id;
 }
 if(place_meeting(x+1,y,obj_crate)) {
     nRight = true;
+    n2 = other.id;
 }
 if(place_meeting(x,y-1,obj_crate)) {
     nUp = true;
+    n3 = other.id;
 }
 if(place_meeting(x,y+1,obj_crate)) {
     nDown = true;
+    n4 = other.id;
 }
+
+
 //Change type
 set_type_crate();
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="61">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>view_wview[0] -= 90;
-view_hview[0] -= 160;
-view_object[0] = mouse_hover;
-view_object[0] = noone;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="60">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>view_wview[0] += 90;
-view_hview[0] += 160;
-view_object[0] = mouse_hover;
-view_object[0] = noone;
 </string>
           </argument>
         </arguments>

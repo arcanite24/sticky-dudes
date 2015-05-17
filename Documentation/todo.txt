@@ -1,0 +1,5 @@
+TODO List:
+
+-More work on energy system
+-Finish the money system
+-Start the farming system
